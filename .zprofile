@@ -5,7 +5,7 @@ prompt_context(){}
 # upgrade
 alias aptgrade='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias pacgrade='sudo pacman -Syyu'
-alias yaygrade='yay -Syyu'
+alias yaygrade='yay -Syyu --noconfirm'
 alias brewgrade='brew update && brew upgrade && brew cleanup'
 alias sdkgrade='sdk upgrade'
 alias gemgrade="gem update && gem cleanup"
