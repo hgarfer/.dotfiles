@@ -75,8 +75,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # System info
 alias mysysteminfo="sudo inxi -FGxm"
 
-export SDKMAN_DIR="/home/holger/.sdkman"
-[[ -s "/home/holger/.sdkman/bin/sdkman-init.sh" ]] && source "/home/holger/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # RVM
 
