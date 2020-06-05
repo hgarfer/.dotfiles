@@ -21,22 +21,22 @@ alias asdfgrade='asdf update && asdf plugin update --all'
 alias upgrade='pacgrade && yaygrade && sdkgrade && nodegrade && fzfgrade && tpmgrade && spaceshippromptgrade && zgrade && emacsgrade && asdfgrade'
 
 # gradle
-alias g='./gradlew'
-alias gbr='g bootRun'
-alias gc='g check'
+# alias g='./gradlew'
+# alias gbr='g bootRun'
+# alias gc='g check'
 
 # maven
-alias m="mvn"
-alias mct="m clean test"
+# alias m="mvn"
+# alias mct="m clean test"
 
 # git
-alias commit='git commit'
-alias clone='git clone'
-alias pull='git pull'
+# alias commit='git commit'
+# alias clone='git clone'
+# alias pull='git pull'
 alias pullall="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && git pull && echo)' \;"
 alias statusall="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && git status -s && echo)' \;"
-alias push='git push'
-alias status='git status'
+# alias push='git push'
+# alias status='git status'
 alias YOLO='git push --force'
 
 # NVM
@@ -46,14 +46,10 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.zcmd/z.sh
 
-# LinuxBrew
-#export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-#export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-#export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+# dotnet tools
+export PATH="$HOME/.dotnet/tools:$PATH"
 
-# Ubuntu make installation of Ubuntu Make binary symlink
-PATH=$HOME/.local/share/umake/bin:$PATH
-
+# Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
 #export PATH="$HOME/.node_modules/bin:$PATH"

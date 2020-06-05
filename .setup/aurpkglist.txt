@@ -22,4 +22,5 @@ spotify
 station
 teamviewer
 virtualbox-ext-oracle
+zoom
 zsa-wally
