@@ -48,6 +48,7 @@ source ~/.zcmd/z.sh
 
 # dotnet tools
 export PATH="$HOME/.dotnet/tools:$PATH"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
