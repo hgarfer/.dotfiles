@@ -1,5 +1,12 @@
 {
+    "workbench.colorTheme": "Solarized Dark",
+    "java.semanticHighlighting.enabled": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.semanticHighlighting.enabled": true
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "files.autoSave": "afterDelay"
 }
