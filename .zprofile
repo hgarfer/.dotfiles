@@ -5,7 +5,7 @@ prompt_context(){}
 # upgrade
 alias aptgrade='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias pacgrade='sudo pacman -Syyu --noconfirm'
-alias yaygrade='yay -Syyu --noconfirm'
+alias yaygrade='yay -Syyu --noconfirm && yay -Sc --noconfirm'
 alias brewgrade='brew update && brew upgrade && brew cleanup'
 alias sdkgrade='sdk upgrade'
 alias gemgrade="gem update && gem cleanup"
@@ -18,7 +18,8 @@ alias spaceshippromptgrade='git -C $ZSH_CUSTOM/themes/spaceship-prompt pull --re
 alias zgrade='git -C ~/.zcmd pull --rebase'
 alias emacsgrade='git -C ~/.emacs.d pull --rebase'
 alias asdfgrade='asdf update && asdf plugin update --all'
-alias upgrade='pacgrade && yaygrade && sdkgrade && nodegrade && fzfgrade && tpmgrade && spaceshippromptgrade && zgrade && emacsgrade && asdfgrade'
+alias snapgrade='sudo snap refresh'
+alias upgrade='pacgrade && yaygrade && sdkgrade && nodegrade && fzfgrade && tpmgrade && spaceshippromptgrade && zgrade && emacsgrade && asdfgrade && snapgrade'
 
 # gradle
 # alias g='./gradlew'

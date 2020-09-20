@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Monokai",
     "java.semanticHighlighting.enabled": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -8,5 +8,63 @@
         "editor.defaultFormatter": "redhat.java"
     },
     "terminal.integrated.shell.linux": "/bin/zsh",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "terminal.integrated.shellArgs.osx": [
+        "-l"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/home/holger/.sdkman/candidates/java/8.0.252.hs-adpt",
+            "sources": "/home/holger/.sdkman/candidates/java/8.0.252.hs-adpt/src.zip",
+            "javadoc": "https://docs.oracle.com/javase/8/docs/api/index.html"
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/home/holger/.sdkman/candidates/java/11.0.7.hs-adpt",
+            "sources": "/home/holger/.sdkman/candidates/java/11.0.7.hs-adpt/lib/src.zip",
+            "javadoc": "https://docs.oracle.com/javase/11/docs/api/index.html",
+            "default": true
+        },
+        {
+            "name": "JavaSE-14",
+            "path": "/home/holger/.sdkman/candidates/java/14.0.1.hs-adpt",
+            "sources": "/home/holger/.sdkman/candidates/java/14.0.1.hs-adpt/lib/src.zip",
+            "javadoc": "https://docs.oracle.com/javase/14/docs/api/index.html"
+        }
+    ],
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.maven.downloadSources": true,
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/holger/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "quarkus.tools.alwaysShowWelcomePage": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "codespaces.accountProvider": "GitHub",
+    "java.imports.gradle.wrapper.checksums": [
+        {
+            "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14",
+            "allowed": true
+        },
+        {
+            "sha256": "70239e6ca1f0d5e3b2808ef6d82390cf9ad58d3a3a0d271677a51d1b89475857",
+            "allowed": true
+        },
+        {
+            "sha256": "76b12da7f4a7cdd025e5996811a2e49bf5df0fb62d72554ab555c0e434b63aae",
+            "allowed": true
+        },
+        {
+            "sha256": "3dc39ad650d40f6c029bd8ff605c6d95865d657dbfdeacdb079db0ddfffedf9f",
+            "allowed": true
+        },
+        {
+            "sha256": "96f793a18e056c23ffeec67c1f3bb8eccff5a4a407fc9ceac183527e7eedf4b6",
+            "allowed": true
+        }
+    ],
+    "git.autofetch": true,
+    "go.formatTool": "goimports"
 }
