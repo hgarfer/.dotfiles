@@ -1,5 +1,5 @@
 # from https://www.atlassian.com/git/tutorials/dotfiles
-git clone --bare https://github.com/hgarfer/.dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/hgarfer/.dotfiles.git $HOME/.dotfiles -b wsl-debian
 function config {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }

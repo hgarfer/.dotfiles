@@ -3,7 +3,7 @@
 #prompt_context(){}
 
 # upgrade
-alias aptgrade='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+alias aptgrade='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
 alias pacgrade='sudo pacman -Syyu --noconfirm'
 alias yaygrade='yay -Syyu --noconfirm && yay -Sc --noconfirm'
 alias parugrade='paru -Syyu --noconfirm'
@@ -22,7 +22,7 @@ alias doomemacsgrade='doom upgrade && doom purge -g'
 alias asdfgrade='asdf update && asdf plugin update --all'
 alias snapgrade='sudo snap refresh'
 alias cargograde='cargo install-update -a'
-alias upgrade='parugrade && sdkgrade && nodegrade && tpmgrade && spaceshippromptgrade && doomemacsgrade'
+alias upgrade='aptgrade && sdkgrade && nodegrade && tpmgrade && spaceshippromptgrade && doomemacsgrade'
 
 # gradle
 # alias g='./gradlew'
@@ -55,11 +55,9 @@ source /usr/share/z/z.sh
 export PATH="$HOME/.dotnet/tools:$PATH"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-# Cargo
-
 # npm installs en home
-PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix=~/.node_modules
+# PATH="$HOME/.node_modules/bin:$PATH"
+# export npm_config_prefix=~/.node_modules
 
 # added by Anaconda3 installer
 #export PATH="$HOME/anaconda3/bin:$PATH"
@@ -89,6 +87,10 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 # python local stuff
 export PATH="$HOME/.local/bin:$PATH"
 
+# cargo (rust) packages
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
 # powerline
 # powerline-daemon -q
 # . /usr/share/powerline/bindings/zsh/powerline.zsh
@@ -107,3 +109,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+# spaceship stuff
+export SPACESHIP_BATTERY_SHOW=false
+
+alias update-nvim-master='asdf uninstall neovim ref:master && asdf install neovim ref:master'
