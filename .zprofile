@@ -104,6 +104,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # fzf
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+
+# ruby gems
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
