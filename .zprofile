@@ -75,7 +75,7 @@ export PATH="$GOPATH/bin:$PATH"
 alias docker-clear="docker system prune -a -f --volumes"
 
 # Dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias aconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # System info
 alias mysysteminfo="sudo inxi -FGxm"
