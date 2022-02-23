@@ -380,4 +380,5 @@ neofetch | lolcat
 #sysinfo
 #sysinfo-retro
 #cpufetch
-#colorscript random
+#colorscript random[ -f "/home/holger/.ghcup/env" ] && source "/home/holger/.ghcup/env" # ghcup-env
+[ -f "/home/holger/.ghcup/env" ] && source "/home/holger/.ghcup/env" # ghcup-env
