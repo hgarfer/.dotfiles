@@ -16,13 +16,14 @@ alias nodegrade='npm update -g'
 alias fzfgrade='git -C ~/.fzf pull --rebase'
 alias tpmgrade='git -C ~/.tmux/plugins/tpm pull --rebase'
 alias spaceshippromptgrade='sudo git -C $ZSH_CUSTOM/themes/spaceship-prompt pull --rebase'
+alias zshautosuggestionsgrade='sudo git -C $ZSH_CUSTOM/plugins/zsh-autosuggestions pull --rebase'
 alias zgrade='git -C ~/.zcmd pull --rebase'
 alias spacemacsgrade='git -C ~/.emacs.d pull --rebase'
 alias doomemacsgrade='doom upgrade && doom purge -g'
 alias asdfgrade='asdf update && asdf plugin update --all'
 alias snapgrade='sudo snap refresh'
 alias cargograde='cargo install-update -a'
-alias upgrade='parugrade && sdkgrade && nodegrade && tpmgrade && spaceshippromptgrade && doomemacsgrade'
+alias upgrade='parugrade && sdkgrade && nodegrade && tpmgrade && spaceshippromptgrade && zshautosuggestionsgrade && doomemacsgrade'
 
 # gradle
 # alias g='./gradlew'
@@ -75,7 +76,7 @@ export PATH="$GOPATH/bin:$PATH"
 alias docker-clear="docker system prune -a -f --volumes"
 
 # Dotfiles
-alias aconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # System info
 alias mysysteminfo="sudo inxi -FGxm"
@@ -108,3 +109,5 @@ export PATH="$HOME/.local/bin:$PATH"
 # ruby gems
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+
+[ -f "/home/holger/.ghcup/env" ] && source "/home/holger/.ghcup/env" # ghcup-env
