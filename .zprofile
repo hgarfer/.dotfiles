@@ -111,3 +111,6 @@ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
 [ -f "/home/holger/.ghcup/env" ] && source "/home/holger/.ghcup/env" # ghcup-env
+
+# lunar vim
+export PATH="$PATH:$HOME/.local/bin/"
