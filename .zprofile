@@ -49,7 +49,7 @@ alias YOLO='git push --force'
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #source ~/.zcmd/z.sh
-source /usr/share/z/z.sh
+source ~/z.sh
 
 # dotnet tools
 export PATH="$HOME/.dotnet/tools:$PATH"
@@ -88,7 +88,6 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # cargo (rust) packages
-export PATH="$HOME/.cargo/bin:$PATH"
 
 
 # powerline
@@ -114,3 +113,12 @@ export PATH="$HOME/gems/bin:$PATH"
 export SPACESHIP_BATTERY_SHOW=false
 
 alias update-nvim-master='asdf uninstall neovim ref:master && asdf install neovim ref:master'
+
+# spring boot
+. ~/.sdkman/candidates/springboot/current/shell-completion/bash/spring
+
+# AWS CLI
+export PATH="/usr/local/bin/aws:$PATH"
+
+# lunar vim 
+export PATH="$HOME/.local/bin/:$PATH"
