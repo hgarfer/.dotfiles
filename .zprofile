@@ -18,11 +18,12 @@ alias tpmgrade='git -C ~/.tmux/plugins/tpm pull --rebase'
 alias spaceshippromptgrade='sudo git -C $ZSH_CUSTOM/themes/spaceship-prompt pull --rebase'
 alias zgrade='git -C ~/.zcmd pull --rebase'
 alias spacemacsgrade='git -C ~/.emacs.d pull --rebase'
+alias megrade='git -C ~/me pull --rebase --recurse-submodules=yes'
 alias doomemacsgrade='doom upgrade && doom purge -g'
 alias asdfgrade='asdf update && asdf plugin update --all'
 alias snapgrade='sudo snap refresh'
 alias cargograde='cargo install-update -a'
-alias upgrade='aptgrade && sdkgrade && nodegrade && tpmgrade && spaceshippromptgrade && doomemacsgrade'
+alias upgrade='aptgrade && sdkgrade && nodegrade && tpmgrade && doomemacsgrade && megrade && cargograde'
 
 # gradle
 # alias g='./gradlew'
@@ -122,3 +123,6 @@ export PATH="/usr/local/bin/aws:$PATH"
 
 # lunar vim 
 export PATH="$HOME/.local/bin/:$PATH"
+
+eval "$(starship init zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

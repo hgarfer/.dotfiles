@@ -8,7 +8,7 @@ export ZSH="/home/holger/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,12 +71,22 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	asdf
 	git
-  docker
-  mvn
-  gradle
-	)
+  zsh-autosuggestions # needs install https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+  sudo
+  web-search
+  copypath
+  copyfile
+  copybuffer
+  dirhistory
+  history
+  emacs
+  fzf
+  rsync
+  git
+  vundle
+  vscode
+  )
 
 source $ZSH/oh-my-zsh.sh
 
